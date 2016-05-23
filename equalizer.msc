@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>mp3jfx</comment>
+<entry key="f10">2.9189189189189193</entry>
+<entry key="f9">-2.2702702702702666</entry>
+<entry key="f8">-7.105427357601002E-15</entry>
+<entry key="f7">-19.45945945945946</entry>
+<entry key="f6">-2.9189189189189193</entry>
+<entry key="f5">-11.351351351351353</entry>
+<entry key="f4">-7.783783783783782</entry>
+<entry key="f3">3.2432432432432456</entry>
+<entry key="f2">3.567567567567565</entry>
+<entry key="f1">-16.540540540540544</entry>
+<entry key="enable">true</entry>
+</properties>

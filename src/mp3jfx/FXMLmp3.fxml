@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="163.0" prefWidth="320" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mp3jfx.FXMLmp3Controller">
+    <children>
+      <ImageView fx:id="imgBack" fitHeight="200.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnClose" fitHeight="15.0" fitWidth="14.0" layoutX="33.0" layoutY="69.0" onMouseClicked="#hClose" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="btnOpen" fitHeight="21.0" fitWidth="14.0" layoutX="55.0" layoutY="65.0" onMouseClicked="#hbtnOpen" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="btnPlay" fitHeight="15.0" fitWidth="15.0" layoutX="273.0" layoutY="69.0" onMouseClicked="#hbtnPlay" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="fxNomMus" layoutX="86.0" layoutY="87.0" onDragDropped="#hdragdropMusic" onMouseClicked="#hbtnPlayList" prefHeight="22.0" prefWidth="148.0" style="-fx-background-color: #000000; -fx-alignment: center;" textFill="#48ff1a" />
+      <ImageView fx:id="btnStop" fitHeight="15.0" fitWidth="15.0" layoutX="273.0" layoutY="53.0" onMouseClicked="#hbtnStop" pickOnBounds="true" preserveRatio="true" />
+      <Slider fx:id="lsdVolume" blockIncrement="1.0" layoutX="80.0" layoutY="32.0" majorTickUnit="2.0" max="10.0" minorTickCount="1" onMouseClicked="#hsldVolume" prefHeight="24.0" prefWidth="158.0" showTickLabels="true" showTickMarks="true" value="10.0">
+         <tooltip>
+            <Tooltip text="Volume" />
+         </tooltip></Slider>
+      <Label fx:id="lbAction" layoutX="173.0" layoutY="113.0" prefHeight="21.0" prefWidth="53.0" style="-fx-alignment: center;" text="STOP" textAlignment="RIGHT" textFill="#800202">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnBack" fitHeight="20.0" fitWidth="20.0" layoutX="258.0" layoutY="110.0" onMouseClicked="#hbtnBack" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="btnFor" fitHeight="20.0" fitWidth="20.0" layoutX="282.0" layoutY="110.0" onMouseClicked="#hbtnFor" pickOnBounds="true" preserveRatio="true" />
+      <Slider fx:id="lsdBalance" blockIncrement="1.0" layoutX="66.0" layoutY="92.0" majorTickUnit="1.0" max="2.0" minorTickCount="0" onMouseClicked="#hsldBalance" orientation="VERTICAL" prefHeight="31.0" prefWidth="14.0" showTickMarks="true" snapToTicks="true" value="1.0">
+         <tooltip>
+            <Tooltip text="Balance" />
+         </tooltip></Slider>
+      <Label fx:id="lbTimer" layoutX="86.0" layoutY="110.0" prefHeight="24.0" prefWidth="87.0" style="-fx-alignment: center; -fx-background-color: #000000;" textFill="#172eda">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progMus" focusTraversable="false" layoutX="81.0" layoutY="63.0" opacity="0.4" prefHeight="25.0" prefWidth="82.0" progress="0.0" rotate="180.0" style="-fx-background-color: #000000; -fx-accent: blue; -fx-opacity: 0.4;" />
+      <ImageView fx:id="btnNext" fitHeight="15.0" fitWidth="20.0" layoutX="30.0" layoutY="111.0" onMouseClicked="#hbtnNext" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="btnSave" fitHeight="15.0" fitWidth="15.0" layoutX="273.0" layoutY="88.0" onMouseClicked="#hbtnSave" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar fx:id="progMus1" focusTraversable="false" layoutX="158.0" layoutY="64.0" opacity="0.4" prefHeight="25.0" prefWidth="82.0" progress="0.0" style="-fx-background-color: #000000; -fx-accent: red; -fx-opacity: 0.4;" />
+      <ImageView fx:id="btnEqual" fitHeight="22.0" fitWidth="20.0" layoutX="30.0" layoutY="128.0" onMouseClicked="#hBtnEqual" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@equalizer.png" />
+         </image></ImageView>
+      <ImageView fx:id="BtnMasquer" fitHeight="20.0" fitWidth="53.0" layoutX="16.0" layoutY="32.0" onMouseClicked="#hMasquer" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
